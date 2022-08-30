@@ -1,0 +1,539 @@
+/* font google */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap");
+
+:root {
+  --color-primary: #d2eae4;
+  --color-second: #d9dbec;
+  --color-thrid: #eacccd;
+  --color-fourd: #ffedcc;
+  --color-fifed: #1c1c1e;
+  --color-sixed: #ffffff;
+  --color-seved: #ebeaef;
+  --color-indcator: #dad9dc;
+  --color-hover: #8d96ed;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: var(--color-fifed);
+}
+
+/* navbar */
+.navbar {
+  background-color: var(--color-sixed);
+  border-bottom: 1px solid var(--color-fifed);
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-variant: var(--color-fifed);
+}
+
+.button-nav {
+  display: flex;
+}
+
+.btn {
+  padding: 5px 9px;
+  border-radius: 50%;
+}
+
+.btn-cart {
+  padding: 5px 9px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--color-fifed);
+}
+
+.btn-cart > .bi-cart-check {
+  color: var(--color-sixed);
+  padding: 0 2px 0 0;
+}
+
+.btn-cart > span {
+  color: var(--color-sixed);
+}
+
+.btn-account {
+  margin-right: 15px;
+}
+
+/* banner */
+section#banner-carousel {
+  margin-top: 70px;
+}
+
+.banner {
+  min-height: 400px;
+  background-color: var(--color-primary);
+  padding: 50px 30px;
+  position: relative;
+}
+
+.banner-2 {
+  background-color: var(--color-second);
+}
+
+.banner-3 {
+  background-color: var(--color-thrid);
+}
+
+.banner-4 {
+  background-color: var(--color-fourd);
+}
+
+.banner-5 {
+  background-color: var(--color-indcator);
+}
+
+.btn-price {
+  padding: 10px 15px;
+  border: none;
+  margin-top: 50px;
+  background-color: transparent;
+  border: 1px solid var(--color-fifed);
+}
+
+h1 {
+  font-weight: 500;
+  font-size: 35px;
+}
+
+.img-banner {
+  width: 100%;
+}
+
+.carousel-control-prev > .carousel-control-prev-icon {
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.carousel-control-next > .carousel-control-next-icon {
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* product category */
+.product-category {
+  width: 50%;
+  height: 400px;
+  background-color: #333;
+  outline: 1px solid rgba(255, 255, 255, 0.5);
+  outline-offset: -8px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.card-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.6;
+  transition: transform 0.75s;
+}
+
+.product-category:hover .card-img {
+  transform: scale(1.15);
+}
+
+.card-title {
+  position: absolute;
+  left: 15px;
+  top: 50px;
+  font-size: 100px;
+  color: var(--color-sixed);
+  opacity: 0.7;
+}
+
+.btn-view {
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  background-color: var(--color-sixed);
+  position: absolute;
+  left: 15px;
+  bottom: 50px;
+  opacity: 0.7;
+}
+
+.btn-view > a {
+  text-decoration: none;
+  color: var(--color-fifed);
+}
+
+/* product */
+.title-product {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.shop-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+  gap: 1.5rem;
+}
+
+.product-box {
+  position: relative;
+  min-height: 320px;
+  background-color: var(--color-sixed);
+}
+
+.product-image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 0.5rem;
+  background-color: var(--color-seved);
+  transition: transform 0.75s;
+}
+
+.product-image:hover {
+  transform: scale(0.95);
+}
+
+.product-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.price {
+  font-weight: 500;
+}
+
+.add-cart {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-top: 20px;
+  background-color: var(--color-fifed);
+  color: var(--color-sixed);
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+
+.btn-shop {
+  padding: 10px 20px;
+  border: none;
+  background-color: var(--color-fifed);
+}
+
+.btn-shop > a {
+  text-decoration: none;
+  color: var(--color-sixed);
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* product men dan women */
+.product-men {
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.product-men-deskripsi {
+  font-size: 18px;
+  padding: 15px 0;
+}
+
+.btn-shop-men {
+  padding: 8px 10px;
+  border: none;
+  background-color: var(--color-fifed);
+}
+
+.btn-shop-men > a {
+  text-decoration: none;
+  color: var(--color-sixed);
+}
+
+.product-women {
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.product-women-deskripsi {
+  font-size: 18px;
+  padding: 15px 0;
+}
+
+.btn-shop-women {
+  padding: 8px 10px;
+  border: none;
+  background-color: var(--color-fifed);
+}
+
+.btn-shop-women > a {
+  text-decoration: none;
+  color: var(--color-sixed);
+}
+
+/* footer */
+footer {
+  background-color: var(--color-seved);
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+.footer-brand {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.footer-brand-deskripsi {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.footer-contact {
+  font-size: 25px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.footer-contact-deskripsi {
+  font-size: 18px;
+  font-weight: 300;
+  padding: 0 0 0 8px;
+}
+
+.footer-about {
+  font-size: 25px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.footer-about-link {
+  font-size: 18px;
+  font-weight: 400;
+  display: block;
+  padding: 6px 0 0 8px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-fifed);
+  transition: 0.4s;
+}
+
+a:hover {
+  color: var(--color-hover);
+}
+
+.footer-sosialmedia {
+  font-size: 25px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.sosialmedia {
+  font-size: 25px;
+  padding: 0 10px 0 8px;
+}
+
+/* responsive */
+@media screen and (max-width: 999px) {
+  /* .navbar-toggler {
+    display: flex;
+    order: -1; 
+    margin: auto;
+  } */
+
+  .navbar-nav {
+    margin-top: 10px;
+  }
+
+  .button-nav {
+    display: flex;
+    order: -1;
+    margin-right: auto;
+  }
+
+  .banner {
+    padding: 20px 10px;
+    min-height: 250px;
+  }
+
+  h1 {
+    font-size: 25px;
+  }
+
+  .btn-price {
+    padding: 10px 15px;
+    border: none;
+    margin-top: 25px;
+    background-color: transparent;
+    border: 1px solid var(--color-fifed);
+  }
+
+  .img-banner {
+    width: 75%;
+  }
+
+  .row > .product-category {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .card-title {
+    font-size: 60px;
+  }
+
+  .product-box {
+    min-height: 250px;
+  }
+
+  .product-men {
+    font-size: 30px;
+    font-weight: 600;
+  }
+
+  .product-men-deskripsi {
+    font-size: 15px;
+    padding: 10px 0;
+  }
+
+  .product-women {
+    font-size: 30px;
+    font-weight: 600;
+  }
+
+  .product-women-deskripsi {
+    font-size: 15px;
+    padding: 10px 0;
+  }
+
+  .footer-contact {
+    font-size: 20px;
+  }
+
+  .footer-about {
+    font-size: 20px;
+  }
+
+  .footer-sosialmedia {
+    font-size: 20px;
+  }
+
+  .footer-brand-deskripsi {
+    font-size: 15px;
+  }
+
+  .footer-contact-deskripsi {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  /* .navbar-toggler {
+    display: flex;
+    order: -1; 
+    margin-right: auto;
+  } */
+
+  .navbar-nav {
+    margin-top: 10px;
+  }
+
+  .button-nav {
+    display: flex;
+    order: -1;
+    margin-right: auto;
+  }
+
+  .btn-price {
+    padding: 10px 15px;
+    border: none;
+    margin-top: 25px;
+    background-color: transparent;
+    border: 1px solid var(--color-fifed);
+  }
+
+  .banner {
+    padding: 20px 10px;
+    min-height: 380px;
+  }
+
+  h1 {
+    font-size: 25px;
+  }
+
+  .img-banner {
+    width: 75%;
+  }
+
+  .row > .product-category {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .card-title {
+    font-size: 60px;
+  }
+
+  .shop-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, auto));
+    gap: 1.4rem;
+  }
+
+  .product-box {
+    min-height: 250px;
+  }
+
+  .product-title {
+    font-size: 1rem;
+  }
+
+  .price {
+    font-size: 1rem;
+  }
+
+  .product-men {
+    font-size: 30px;
+    font-weight: 600;
+  }
+
+  .product-men-deskripsi {
+    font-size: 15px;
+    padding: 10px 0;
+  }
+
+  .product-women {
+    font-size: 30px;
+    font-weight: 600;
+  }
+
+  .product-women-deskripsi {
+    font-size: 15px;
+    padding: 10px 0;
+  }
+
+  .footer-brand-deskripsi {
+    font-size: 15px;
+  }
+
+  .footer-contact-deskripsi {
+    font-size: 15px;
+  }
+}
